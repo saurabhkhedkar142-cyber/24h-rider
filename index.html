@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111111"><meta name="description" content="24 H Rider delivery partner portal">
+<link rel="manifest" href="/manifest.json"><link rel="stylesheet" href="/style.css">
+<title>24 H Rider</title>
+</head>
+<body>
+<header><div class="logo">24 <span>H</span></div><div><small>Rider Partner Portal</small><h1>नमस्ते, Rider</h1></div></header>
+<main>
+<div id="status" class="notice">Server से जुड़ रहे हैं…</div>
+<section class="card">
+<h2>Rider Registration</h2>
+<p>अपना नाम और मोबाइल नंबर डालकर रजिस्ट्रेशन करें। सार्वजनिक उपयोग से पहले OTP verification जोड़ना ज़रूरी है।</p>
+<form id="register"><label>पूरा नाम<input name="name" required maxlength="80" autocomplete="name"></label><label>10 अंकों का मोबाइल नंबर<input name="phone" required pattern="[0-9]{10}" inputmode="numeric" maxlength="10" autocomplete="tel-national"></label><button>Register Rider</button></form>
+<div id="riderResult" aria-live="polite"></div>
+</section>
+<section class="card"><div class="title-row"><h2>Available Orders</h2><button id="refresh" class="secondary">Refresh</button></div><div id="orders"><p>पहले server connect होना चाहिए।</p></div></section>
+<section class="card"><h2>कमाई</h2><p>कमाई और wallet दिखाने के लिए सुरक्षित login और verified order-completion workflow जोड़ना होगा।</p><p class="muted">इस project में API/database का आधार है; अभी real customer orders, GPS tracking, payouts, OTP या admin login configured नहीं हैं।</p></section>
+</main>
+<footer>24 H Rider • Web App</footer>
+<script src="/app.js"></script>
+</body></html>
